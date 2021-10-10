@@ -1,3 +1,4 @@
+import pandas as pd
 OR = {
     "x1": [0,0,1,1],
     "x2": [0,1,0,1],
