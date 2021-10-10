@@ -13,13 +13,12 @@ def main(data, modelName, plotName, eta, epochs):
     save_model(model, filename=modelName)
     save_plot(df, plotName, model)
 
-
 if __name__ == '__main__':
-    OR = {
+    AND = {
         "x1": [0,0,1,1],
         "x2": [0,1,0,1],
-        "y": [0,1,1,1],
+        "y": [0,0,0,1],
     }
     ETA = 0.3 # 0 and 1
     EPOCHS = 10
-    main(data=OR, modelName="or.model", plotName="or.png", eta=ETA, epochs=EPOCHS)
+    main(data=AND, modelName="and1.model", plotName="and1.png", eta=ETA, epochs=EPOCHS)
